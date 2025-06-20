@@ -1,151 +1,457 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>こすけさん専用マッチングアプリ返信支援アプリ</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://flo.host/qHEfjRB/styles.js"></script>
-</head>
-<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 font-sans text-gray-800">
-  <div class="container mx-auto px-4 py-8 max-w-3xl">
-    <!-- ヘッダー部分 -->
-    <header class="text-center mb-12">
-      <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-        </svg>
-      </div>
-      <h1 class="text-3xl font-bold mb-2 text-indigo-800">こすけさん専用<br>マッチングアプリ返信支援アプリへようこそ！</h1>
-      <p class="text-lg text-gray-600">あなたのマッチング成功率を高める、あなただけのパーソナルアシスタント</p>
-    </header>
+<!-- saved from url=(0025)https://flo.host/Lg6U_Lb/ -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Copilot 研修資料 | はじめてのAI活用ガイド</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/css2" rel="stylesheet">
+    <script src="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/saved_resource"></script>
+    <script src="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/lucide@latest"></script>
+    <link rel="stylesheet" href="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/style.css">
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.prose{color:var(--tw-prose-body);max-width:65ch;}.prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:1.25em;margin-bottom:1.25em}.prose :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-lead);font-size:1.25em;line-height:1.6;margin-top:1.2em;margin-bottom:1.2em}.prose :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-links);text-decoration:underline;font-weight:500}.prose :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-bold);font-weight:600}.prose :where(a strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(blockquote strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(thead th strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(ol):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:decimal;margin-top:1.25em;margin-bottom:1.25em;padding-inline-start:1.625em}.prose :where(ol[type="A"]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:upper-alpha}.prose :where(ol[type="a"]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:lower-alpha}.prose :where(ol[type="A" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:upper-alpha}.prose :where(ol[type="a" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:lower-alpha}.prose :where(ol[type="I"]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:upper-roman}.prose :where(ol[type="i"]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:lower-roman}.prose :where(ol[type="I" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:upper-roman}.prose :where(ol[type="i" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:lower-roman}.prose :where(ol[type="1"]):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:decimal}.prose :where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *)){list-style-type:disc;margin-top:1.25em;margin-bottom:1.25em;padding-inline-start:1.625em}.prose :where(ol > li):not(:where([class~="not-prose"],[class~="not-prose"] *))::marker{font-weight:400;color:var(--tw-prose-counters)}.prose :where(ul > li):not(:where([class~="not-prose"],[class~="not-prose"] *))::marker{color:var(--tw-prose-bullets)}.prose :where(dt):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-headings);font-weight:600;margin-top:1.25em}.prose :where(hr):not(:where([class~="not-prose"],[class~="not-prose"] *)){border-color:var(--tw-prose-hr);border-top-width:1px;margin-top:3em;margin-bottom:3em}.prose :where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *)){font-weight:500;font-style:italic;color:var(--tw-prose-quotes);border-inline-start-width:0.25rem;border-inline-start-color:var(--tw-prose-quote-borders);quotes:"\201C""\201D""\2018""\2019";margin-top:1.6em;margin-bottom:1.6em;padding-inline-start:1em}.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::before{content:open-quote}.prose :where(blockquote p:last-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::after{content:close-quote}.prose :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-headings);font-weight:800;font-size:2.25em;margin-top:0;margin-bottom:0.8888889em;line-height:1.1111111}.prose :where(h1 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){font-weight:900;color:inherit}.prose :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-headings);font-weight:700;font-size:1.5em;margin-top:2em;margin-bottom:1em;line-height:1.3333333}.prose :where(h2 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){font-weight:800;color:inherit}.prose :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-headings);font-weight:600;font-size:1.25em;margin-top:1.6em;margin-bottom:0.6em;line-height:1.6}.prose :where(h3 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){font-weight:700;color:inherit}.prose :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-headings);font-weight:600;margin-top:1.5em;margin-bottom:0.5em;line-height:1.5}.prose :where(h4 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){font-weight:700;color:inherit}.prose :where(img):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:2em;margin-bottom:2em}.prose :where(picture):not(:where([class~="not-prose"],[class~="not-prose"] *)){display:block;margin-top:2em;margin-bottom:2em}.prose :where(video):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:2em;margin-bottom:2em}.prose :where(kbd):not(:where([class~="not-prose"],[class~="not-prose"] *)){font-weight:500;font-family:inherit;color:var(--tw-prose-kbd);box-shadow:0 0 0 1px rgb(var(--tw-prose-kbd-shadows) / 10%), 0 3px 0 rgb(var(--tw-prose-kbd-shadows) / 10%);font-size:0.875em;border-radius:0.3125rem;padding-top:0.1875em;padding-inline-end:0.375em;padding-bottom:0.1875em;padding-inline-start:0.375em}.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-code);font-weight:600;font-size:0.875em}.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before{content:"`"}.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after{content:"`"}.prose :where(a code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(h1 code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(h2 code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit;font-size:0.875em}.prose :where(h3 code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit;font-size:0.9em}.prose :where(h4 code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(blockquote code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(thead th code):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:inherit}.prose :where(pre):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-pre-code);background-color:var(--tw-prose-pre-bg);overflow-x:auto;font-weight:400;font-size:0.875em;line-height:1.7142857;margin-top:1.7142857em;margin-bottom:1.7142857em;border-radius:0.375rem;padding-top:0.8571429em;padding-inline-end:1.1428571em;padding-bottom:0.8571429em;padding-inline-start:1.1428571em}.prose :where(pre code):not(:where([class~="not-prose"],[class~="not-prose"] *)){background-color:transparent;border-width:0;border-radius:0;padding:0;font-weight:inherit;color:inherit;font-size:inherit;font-family:inherit;line-height:inherit}.prose :where(pre code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before{content:none}.prose :where(pre code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after{content:none}.prose :where(table):not(:where([class~="not-prose"],[class~="not-prose"] *)){width:100%;table-layout:auto;margin-top:2em;margin-bottom:2em;font-size:0.875em;line-height:1.7142857}.prose :where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *)){border-bottom-width:1px;border-bottom-color:var(--tw-prose-th-borders)}.prose :where(thead th):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-headings);font-weight:600;vertical-align:bottom;padding-inline-end:0.5714286em;padding-bottom:0.5714286em;padding-inline-start:0.5714286em}.prose :where(tbody tr):not(:where([class~="not-prose"],[class~="not-prose"] *)){border-bottom-width:1px;border-bottom-color:var(--tw-prose-td-borders)}.prose :where(tbody tr:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){border-bottom-width:0}.prose :where(tbody td):not(:where([class~="not-prose"],[class~="not-prose"] *)){vertical-align:baseline}.prose :where(tfoot):not(:where([class~="not-prose"],[class~="not-prose"] *)){border-top-width:1px;border-top-color:var(--tw-prose-th-borders)}.prose :where(tfoot td):not(:where([class~="not-prose"],[class~="not-prose"] *)){vertical-align:top}.prose :where(th, td):not(:where([class~="not-prose"],[class~="not-prose"] *)){text-align:start}.prose :where(figure > *):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0;margin-bottom:0}.prose :where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *)){color:var(--tw-prose-captions);font-size:0.875em;line-height:1.4285714;margin-top:0.8571429em}.prose{--tw-prose-body:#374151;--tw-prose-headings:#111827;--tw-prose-lead:#4b5563;--tw-prose-links:#111827;--tw-prose-bold:#111827;--tw-prose-counters:#6b7280;--tw-prose-bullets:#d1d5db;--tw-prose-hr:#e5e7eb;--tw-prose-quotes:#111827;--tw-prose-quote-borders:#e5e7eb;--tw-prose-captions:#6b7280;--tw-prose-kbd:#111827;--tw-prose-kbd-shadows:17 24 39;--tw-prose-code:#111827;--tw-prose-pre-code:#e5e7eb;--tw-prose-pre-bg:#1f2937;--tw-prose-th-borders:#d1d5db;--tw-prose-td-borders:#e5e7eb;--tw-prose-invert-body:#d1d5db;--tw-prose-invert-headings:#fff;--tw-prose-invert-lead:#9ca3af;--tw-prose-invert-links:#fff;--tw-prose-invert-bold:#fff;--tw-prose-invert-counters:#9ca3af;--tw-prose-invert-bullets:#4b5563;--tw-prose-invert-hr:#374151;--tw-prose-invert-quotes:#f3f4f6;--tw-prose-invert-quote-borders:#374151;--tw-prose-invert-captions:#9ca3af;--tw-prose-invert-kbd:#fff;--tw-prose-invert-kbd-shadows:255 255 255;--tw-prose-invert-code:#fff;--tw-prose-invert-pre-code:#d1d5db;--tw-prose-invert-pre-bg:rgb(0 0 0 / 50%);--tw-prose-invert-th-borders:#4b5563;--tw-prose-invert-td-borders:#374151;font-size:1rem;line-height:1.75}.prose :where(picture > img):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0;margin-bottom:0}.prose :where(li):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0.5em;margin-bottom:0.5em}.prose :where(ol > li):not(:where([class~="not-prose"],[class~="not-prose"] *)){padding-inline-start:0.375em}.prose :where(ul > li):not(:where([class~="not-prose"],[class~="not-prose"] *)){padding-inline-start:0.375em}.prose :where(.prose > ul > li p):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0.75em;margin-bottom:0.75em}.prose :where(.prose > ul > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:1.25em}.prose :where(.prose > ul > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-bottom:1.25em}.prose :where(.prose > ol > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:1.25em}.prose :where(.prose > ol > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-bottom:1.25em}.prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0.75em;margin-bottom:0.75em}.prose :where(dl):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:1.25em;margin-bottom:1.25em}.prose :where(dd):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0.5em;padding-inline-start:1.625em}.prose :where(hr + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0}.prose :where(h2 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0}.prose :where(h3 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0}.prose :where(h4 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0}.prose :where(thead th:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){padding-inline-start:0}.prose :where(thead th:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){padding-inline-end:0}.prose :where(tbody td, tfoot td):not(:where([class~="not-prose"],[class~="not-prose"] *)){padding-top:0.5714286em;padding-inline-end:0.5714286em;padding-bottom:0.5714286em;padding-inline-start:0.5714286em}.prose :where(tbody td:first-child, tfoot td:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){padding-inline-start:0}.prose :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){padding-inline-end:0}.prose :where(figure):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:2em;margin-bottom:2em}.prose :where(.prose > :first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-top:0}.prose :where(.prose > :last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){margin-bottom:0}.prose-invert{--tw-prose-body:var(--tw-prose-invert-body);--tw-prose-headings:var(--tw-prose-invert-headings);--tw-prose-lead:var(--tw-prose-invert-lead);--tw-prose-links:var(--tw-prose-invert-links);--tw-prose-bold:var(--tw-prose-invert-bold);--tw-prose-counters:var(--tw-prose-invert-counters);--tw-prose-bullets:var(--tw-prose-invert-bullets);--tw-prose-hr:var(--tw-prose-invert-hr);--tw-prose-quotes:var(--tw-prose-invert-quotes);--tw-prose-quote-borders:var(--tw-prose-invert-quote-borders);--tw-prose-captions:var(--tw-prose-invert-captions);--tw-prose-kbd:var(--tw-prose-invert-kbd);--tw-prose-kbd-shadows:var(--tw-prose-invert-kbd-shadows);--tw-prose-code:var(--tw-prose-invert-code);--tw-prose-pre-code:var(--tw-prose-invert-pre-code);--tw-prose-pre-bg:var(--tw-prose-invert-pre-bg);--tw-prose-th-borders:var(--tw-prose-invert-th-borders);--tw-prose-td-borders:var(--tw-prose-invert-td-borders)}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.bottom-4{bottom:1rem}.left-1\/2{left:50%}.top-0{top:0px}.top-4{top:1rem}.bottom-1\.5{bottom:0.375rem}.right-1\.5{right:0.375rem}.z-\[9999\]{z-index:9999}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-24{margin-bottom:6rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mr-4{margin-right:1rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.flex{display:flex}.table-cell{display:table-cell}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-8{height:2rem}.h-screen{height:100vh}.w-0\.5{width:0.125rem}.w-16{width:4rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-64{width:16rem}.w-8{width:2rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-none{max-width:none}.flex-1{flex:1 1 0%}.border-collapse{border-collapse:collapse}.scroll-mt-20{scroll-margin-top:5rem}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-0{border-width:0px}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity, 1))}.bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-indigo-900\/40{--tw-gradient-from:rgb(49 46 129 / 0.4) var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-slate-900\/30{--tw-gradient-to:rgb(15 23 42 / 0.3) var(--tw-gradient-to-position)}.p-10{padding:2.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-normal{font-weight:400}.leading-relaxed{line-height:1.625}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-white\/15{--tw-ring-color:rgb(255 255 255 / 0.15)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:from-indigo-900\/50:hover{--tw-gradient-from:rgb(49 46 129 / 0.5) var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-slate-900\/40:hover{--tw-gradient-to:rgb(15 23 42 / 0.4) var(--tw-gradient-to-position)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:ring-white\/20:hover{--tw-ring-color:rgb(255 255 255 / 0.2)}@media (min-width: 640px){.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:p-8{padding:2rem}}@media (min-width: 768px){.md\:block{display:block}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:gap-6{gap:1.5rem}.md\:p-12{padding:3rem}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:flex{display:flex}}</style><script src="chrome-extension://ajdpfmkffanmkhejnopjppegokpogffp/assets/prompt.js"></script></head>
+<body class="bg-navy text-gray-200 font-sans antialiased">
 
-    <!-- はじめに -->
-    <section class="bg-white rounded-xl shadow-md p-6 mb-8">
-      <h2 class="text-2xl font-bold mb-4 text-indigo-700 border-b border-indigo-100 pb-2">はじめに</h2>
-      <p class="mb-4">このアプリは、マッチングアプリでのコミュニケーションをサポートし、こすけさんの魅力を最大限に活かした返信を提案します。相手との会話をスムーズに進め、最終的に「飲みに誘う」ところまでをサポートします。</p>
-      <p class="mb-4">単なる例文集ではなく、相手に合わせたメッセージを作成するための考え方と具体的なヒントを提供します。あなたの言葉でアレンジし、自然な会話を心がけましょう。</p>
-      <p>マッチングした相手との会話を楽しみ、素敵な出会いを後押しするために、このアプリをぜひご活用ください！</p>
-    </section>
+    <div class="flex">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sticky top-0 h-screen w-64 bg-navy-dark p-6 hidden lg:flex flex-col justify-between transition-transform duration-300">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="rocket" class="lucide lucide-rocket text-pink mr-2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>Copilot研修
+                </h2>
+                <nav id="nav-menu">
+                    <ul class="space-y-4">
+                        <li><a href="https://flo.host/Lg6U_Lb/#intro" class="nav-link text-gray-400 hover:text-white flex items-center transition-colors active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" class="lucide lucide-home w-5 h-5 mr-3"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>はじめに</a></li>
+                        <li><a href="https://flo.host/Lg6U_Lb/#basics" class="nav-link text-gray-400 hover:text-white flex items-center transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="puzzle" class="lucide lucide-puzzle w-5 h-5 mr-3"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"></path></svg>Copilotの基本</a></li>
+                        <li><a href="https://flo.host/Lg6U_Lb/#use-cases" class="nav-link text-gray-400 hover:text-white flex items-center transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" class="lucide lucide-briefcase w-5 h-5 mr-3"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>業務での活用例</a></li>
+                        <li><a href="https://flo.host/Lg6U_Lb/#hands-on" class="nav-link text-gray-400 hover:text-white flex items-center transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="image" class="lucide lucide-image w-5 h-5 mr-3"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>画像生成ハンズオン</a></li>
+                        <li><a href="https://flo.host/Lg6U_Lb/#summary" class="nav-link text-gray-400 hover:text-white flex items-center transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" class="lucide lucide-check-circle w-5 h-5 mr-3"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>まとめ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="text-xs text-gray-500">
+                <p>© 2025 BPO Center Training Dept.</p>
+            </div>
+        </aside>
 
-    <!-- こすけさんの魅力ポイント再確認 -->
-    <section class="bg-white rounded-xl shadow-md p-6 mb-8">
-      <h2 class="text-2xl font-bold mb-4 text-indigo-700 border-b border-indigo-100 pb-2">こすけさんの魅力ポイント</h2>
-      <div class="flex flex-col md:flex-row gap-6 mb-6">
-        <div class="md:w-1/2">
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <div class="flex-shrink-0 w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center mr-2 mt-0.5">
-                <span class="text-white font-bold text-sm">✓</span>
-              </div>
-              <span><strong class="text-indigo-600">アクティブで多趣味:</strong> 野球観戦（特にジャイアンツ）、お酒（刺身と甘めの日本酒）、筋トレ、ドライブ、旅行、エンタメ（乃木坂46·櫻坂46等）と幅広い趣味をお持ちです。</span>
-            </li>
-            <li class="flex items-start">
-              <div class="flex-shrink-0 w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center mr-2 mt-0.5">
-                <span class="text-white font-bold text-sm">✓</span>
-              </div
-              <span><strong class="text-indigo-600">計画性と安定感:</strong> 具体的なライフプラン、経済的な安定感は、真剣な出会いを求める相手に魅力的です。</span>
-            </li>
-            <li class="flex items-start">
-              <div class="flex-shrink-0 w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center mr-2 mt-0.5">
-                <span class="text-white font-bold text-sm">✓</span>
-              </div>
-              <span><strong class="text-indigo-600">社交的な人柄:</strong> 「すぐに仲良くなれるタイプ」で、フランクで話しやすい雰囲気があります。</span>
-            </li>
-          </ul>
-        </div>
-        <div class="md:w-1/2">
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <div class="flex-shrink-0 w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center mr-2 mt-0.5">
-                <span class="text-white font-bold text-sm">✓</span>
-              </div>
-              <span><strong class="text-indigo-600">リードしたい気持ち:</strong> デート費用全額負担の意向など、相手をリードし、楽しませたいという姿勢が伺えます。</span>
-            </li>
-            <li class="flex items-start">
-              <div class="flex-shrink-0 w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center mr-2 mt-0.5">
-                <span class="text-white font-bold text-sm">✓</span>
-              </div>
-              <span><strong class="text-indigo-600">健康的なイメージ:</strong> 筋トレによる「筋肉質」な体型は、健康的で自己管理ができるというポジティブなイメージを与えます。</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- SVG図表省略（必要なら追加できます） -->
-    </section>
+        <!-- Main Content -->
+        <main class="flex-1 p-4 sm:p-8 md:p-12 overflow-y-auto">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Section: Introduction -->
+                <section id="intro" class="scroll-mt-20 mb-24 content-section visible">
+                    <div class="text-center mb-12">
+                        <span class="text-pink font-bold">Microsoft Copilot 研修資料</span>
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mt-2 mb-4">AIと一緒に、仕事をもっと楽しく、もっと楽に。</h1>
+                        <p class="text-lg text-gray-300">AIが初めての方でも大丈夫。あなたの新しい「相棒」Copilotのすべてを、分かりやすく解説します。</p>
+                    </div>
 
-    <!-- アプリの使い方 -->
-    <section class="bg-white rounded-xl shadow-md p-6 mb-8">
-      <h2 class="text-2xl font-bold mb-4 text-indigo-700 border-b border-indigo-100 pb-2">アプリの使い方（基本フロー）</h2>
-      <div class="space-y-4 mb-6">
-        <div class="flex items-center">
-          <div class="w-10 h-10 bg-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold mr-4">1</div>
-          <div>
-            <h3 class="font-bold text-lg">お相手のプロフィール情報を入力</h3>
-            <p class="text-gray-600">マッチングした相手のプロフィール情報（趣味、興味、価値観など）を入力します。</p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-10 h-10 bg-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold mr-4">2</div>
-          <div>
-            <h3 class="font-bold text-lg">AIがマニュアルに基づいて返信案を複数提案</h3>
-            <p class="text-gray-600">あなたの魅力を活かし、相手の情報に最適化された返信案を複数提案します。</p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-10 h-10 bg-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold mr-4">3</div>
-          <div>
-            <h3 class="font-bold text-lg">提案された返信案を選択または参考にメッセージを送信</h3>
-            <p class="text-gray-600">提案の中から好きなものを選び、必要に応じてアレンジしてから送信します。</p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-10 h-10 bg-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold mr-4">4</div>
-          <div>
-            <h3 class="font-bold text-lg">お相手から返信が来たら、その内容を入力</h3>
-            <p class="text-gray-600">相手からの返信内容をアプリに入力し、会話の流れを継続します。</p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-10 h-10 bg-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold mr-4">5</div>
-          <div>
-            <h3 class="font-bold text-lg">AIが再び状況に合わせた返信案を提案</h3>
-            <p class="text-gray-600">会話の流れや相手の反応を分析し、次のステップに進むための最適な返信を提案します。</p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-10 h-10 bg-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold mr-4">6</div>
-          <div>
-            <h3 class="font-bold text-lg">会話が続く限りステップ4と5を繰り返す</h3>
-            <p class="text-gray-600">理想的なタイミングで「飲みに誘う」提案なども含め、会話を成功に導きます。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-navy-light p-8 rounded-xl shadow-lg border border-gray-700">
+                            <h2 class="text-2xl font-bold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="brain-circuit" class="lucide lucide-brain-circuit text-pink mr-3"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M9 13a4.5 4.5 0 0 0 3-4"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M12 13h4"></path><path d="M12 18h6a2 2 0 0 1 2 2v1"></path><path d="M12 8h8"></path><path d="M16 8V5a2 2 0 0 1 2-2"></path><circle cx="16" cy="13" r=".5"></circle><circle cx="18" cy="3" r=".5"></circle><circle cx="20" cy="21" r=".5"></circle><circle cx="20" cy="8" r=".5"></circle></svg>AIって、なあに？</h2>
+                            <p class="text-gray-300 leading-relaxed">
+                                AI（エーアイ）は「人工知能」の略です。難しく聞こえるかもしれませんが、実は「<strong class="text-pink">コンピューターが人間のように考えて、色々なことをお手伝いしてくれる技術</strong>」のこと。
+                                例えば、スマホで写真をきれいに補正したり、次に聞きたい曲をおすすめしてくれたり、身の回りにはもうAIがたくさん使われています。
+                                AIは、私たちの生活や仕事を便利にしてくれる、賢いパートナーなんです。
+                            </p>
+                        </div>
+                        <div class="bg-navy-light p-8 rounded-xl shadow-lg border border-gray-700">
+                             <h2 class="text-2xl font-bold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user-check" class="lucide lucide-user-check text-pink mr-3"><path d="m16 11 2 2 4-4"></path><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>Copilotって、なあに？</h2>
+                            <p class="text-gray-300 leading-relaxed">
+                                Copilot（コパイロット）は、その名の通り「副操縦士」のように、<strong class="text-pink">あなたの仕事に寄り添ってサポートしてくれるAI</strong>です。
+                                Microsoftが開発した、とても賢くて頼りになるあなたの「相棒」だと思ってください。
+                                これから、このCopilotがどんなにすごい力を持っているのか、一緒に見ていきましょう！
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- 次のステップ -->
-    <section class="bg-gradient-to-br from-indigo-600 to-blue-700 rounded-xl shadow-lg p-6 text-white">
-      <h2 class="text-2xl font-bold mb-4 border-b border-indigo-300 pb-2">次のステップへ</h2>
-      <p class="mb-4">準備ができたら、次はお相手のプロフィール情報を入力して、最初の返信案作成を開始しましょう！</p>
-      <p class="mb-6">このアプリがあなたの素敵な出会いを後押しします。</p>
-      <a href="https://chatgpt.com/g/g-682f43a753fc8191839ca91f71913caf-aikosuke" id="startButton" class="bg-white text-indigo-700 font-bold py-3 px-6 rounded-lg shadow hover:bg-indigo-50 transition duration-300 flex items-center justify-center w-full md:w-auto">
-  <span>はじめる</span>
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                <!-- Section: Copilot Basics -->
+                <section id="basics" class="scroll-mt-20 mb-24 content-section visible">
+                    <h2 class="section-title">Copilotの基本：<span class="text-pink">どんなことができるの？</span></h2>
+                    <p class="section-subtitle">Copilotは、あなたが「やってほしいこと」を言葉で伝えるだけで、色々な作業を手伝ってくれます。難しい操作は一切いりません。</p>
+                    
+                    <!-- プロンプトの説明を追加 -->
+                    <div class="mt-8 bg-pink/10 border border-pink/30 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-3 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-circle" class="lucide lucide-message-circle text-pink mr-2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+                            <span class="text-pink">「プロンプト」</span>って何？
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            <strong class="text-pink">プロンプト</strong>とは、AIにお願い・指示する際の言葉のことです。
+                            「今日の天気は？」「メールの文章を作って」「この資料を要約して」など、普通の日本語でお願いするだけでOK！
+                            難しいコンピューター用語を覚える必要は一切ありません。
+                        </p>
+                    </div>
+
+                    <!-- Copilotの起動方法を追加 -->
+                    <div class="mt-8 bg-navy-light p-6 rounded-lg border border-gray-700">
+                        <h3 class="text-xl font-bold text-white mb-3 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mouse-pointer-click" class="lucide lucide-mouse-pointer-click text-pink mr-2"><path d="M14 4.1 12 6"></path><path d="m5.1 8-2.9-.8"></path><path d="m6 12-1.9 2"></path><path d="M7.2 2.2 8 5.1"></path><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"></path></svg>
+                            Copilotの使い方（基本操作）
+                        </h3>
+                        <p class="text-gray-300 mb-4">Copilotは、普段お使いのOfficeアプリの中で簡単に使えます：</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong class="text-pink">Word：</strong>画面右上の「Copilot」アイコンをクリック</li>
+                            <li><strong class="text-pink">Excel：</strong>画面右上の「Copilot」アイコンをクリック</li>
+                            <li><strong class="text-pink">Outlook：</strong>メール作成画面で「Copilot」ボタンを探してクリック</li>
+                            <li><strong class="text-pink">PowerPoint：</strong>「ホーム」タブ内の「Copilot」をクリック</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-10">
+                        <div class="feature-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-text" class="lucide lucide-file-text feature-icon"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                            <h3 class="feature-title">文章の作成</h3>
+                            <p class="feature-text">メールの文章や、会議のお知らせ、報告書などをゼロから作ってくれます。「こんな内容でメールを書いて」と頼むだけです。</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="minimize-2" class="lucide lucide-minimize-2 feature-icon"><path d="m14 10 7-7"></path><path d="M20 10h-6V4"></path><path d="m3 21 7-7"></path><path d="M4 14h6v6"></path></svg>
+                            <h3 class="feature-title">文章の要約</h3>
+                            <p class="feature-text">長い会議の議事録や、たくさんのページがある資料も、大事なところだけを短くまとめてくれます。時間がない時にぴったりです。</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search feature-icon"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                            <h3 class="feature-title">情報さがし</h3>
+                            <p class="feature-text">インターネット上の膨大な情報から、あなたが知りたいことだけを正確に見つけ出して教えてくれます。まるで専属のリサーチャーです。</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="paintbrush" class="lucide lucide-paintbrush feature-icon"><path d="m14.622 17.897-10.68-2.913"></path><path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z"></path><path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15"></path></svg>
+                            <h3 class="feature-title">画像の生成</h3>
+                            <p class="feature-text">「こんな絵がほしい」と言葉で伝えるだけで、あなたのイメージに合ったオリジナルの画像をAIが描いてくれます。絵心がなくても大丈夫！</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-pink/10 border border-pink/30 text-white p-6 rounded-lg text-center">
+                        <p class="font-bold">ポイント：Copilotは、あなたがいつも使っているWordやExcel、Outlookなどのアプリの中で直接使えます！</p>
+                    </div>
+                </section>
+
+                <!-- Section: Use Cases -->
+                <section id="use-cases" class="scroll-mt-20 mb-24 content-section visible">
+                    <h2 class="section-title">業務での活用例：<span class="text-pink">Copilotをこう使おう！</span></h2>
+                    <p class="section-subtitle">ここでは、皆さんの普段の業務でCopilotがどのように役立つか、具体的な例を見ていきましょう。</p>
+                    
+                    <!-- Purchasing -->
+                    <div class="mt-12">
+                        <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-cart" class="lucide lucide-shopping-cart w-8 h-8 mr-4 text-pink"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                            <span class="text-pink">購買・調達担当者向け</span>：購買業務で使ってみよう
+                        </h3>
+                        
+                        <div class="use-case-card">
+                            <h4 class="use-case-title">取引先への見積もり依頼メール作成</h4>
+                            <p class="use-case-description">メールの文章を考える時間、意外とかかりますよね。Copilotなら、丁寧で分かりやすいメール文をあっという間に作成してくれます。</p>
+                            <div class="copilot-interaction">
+                                <div class="prompt-box">
+                                    <div class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user w-4 h-4 mr-2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>あなたのお願い（プロンプト）</div>
+                                    <p class="prompt-text">「株式会社ABC様に、新製品XY-100を50個発注する場合の見積もりをお願いするメールの文面を、丁寧な言葉で作成してください。納期も確認したいです。」</p>
+                                </div>
+                                <div class="response-box">
+                                    <div class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles w-4 h-4 mr-2 text-pink"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>Cop\nilotの回答</div>
+                                    <div class="prose prose-invert max-w-none text-gray-300">
+                                        <p>件名：【株式会社〇〇】新製品XY-100のお見積もり依頼</p>
+                                        <p>株式会社ABC<br>営業部 御担当者様</p>
+                                        <p>いつも大変お世話になっております。<br>株式会社〇〇の購買担当、〇〇です。</p>
+                                        <p>さて、この度は貴社で取り扱っております新製品「XY-100」につきまして、お見積もりをいただきたくご連絡いたしました。</p>
+                                        <p>つきましては、下記内容にてお見積書をご作成いただけますでしょうか。</p>
+                                        <ul>
+                                            <li>製品名：新製品 XY-100</li>
+                                            <li>数量：50個</li>
+                                        </ul>
+                                        <p>また、もし可能でございましたら、発注した場合の標準的な納期についても併せてご教示いただけますと幸いです。</p>
+                                        <p>ご多忙のところ恐縮ですが、ご確認のほど、何卒よろしくお願い申し上げます。</p>
+                                        <p>---<br>株式会社〇〇<br>購買部 〇〇 〇〇<br>（連絡先）<br>---</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prompt-box mb-6" style="background:#23304a; border-radius:0.75rem; padding:1.3em; border: 1px solid #374151;">
+  <div class="font-bold flex items-center mb-2" style="color:#7dd3fc;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user w-4 h-4 mr-2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    チャレンジのお題
+  </div>
+  <div class="prompt-text" style="background:#2d3a56; border-radius:0.75rem; padding:1em;">
+    現場で本当にありそうな「ちょっと困った」「現実味ある」メールシーンにチャレンジ！Copilotにプロンプトをいれてみよう<br>
+    <ul style="margin-top:0.7em;">
+      <li>
+        <span class="font-bold" style="color:#f472b6;">【焼きそばの在庫調整依頼】</span><br>
+        <span class="text-gray-200">「信濃町駅向けに納品予定だったカップ焼きそばが在庫切れになったので、信濃町駅長へ品切れとキャンセル連絡を送るメール文面を作成してください。」</span>
+      </li>
+      <li class="mt-3">
+        <span class="font-bold" style="color:#f472b6;">【入力データ確認の依頼】</span><br>
+        <span class="text-gray-200">「連携されたデータの社員番号の入力ミスを人事担当者に指摘し、正しい番号で連携するように依頼するメールを作成してください。」</span>
+      </li>
+      <li class="mt-3">
+        <span class="font-bold" style="color:#f472b6;">【定例会・連絡事項の周知】</span><br>
+        <span class="text-gray-200">「来週の定例会議をスキップし、次回開催日を周知する案内メールを作成してください。」</span>
+      </li>
+    </ul>
+    <div class="mt-3 text-sm" style="color:#f9fafb;">★どれか選んでCopilotに指示！業務の実例でメール作成してみましょう。</div>
+  </div>
+</div>
+
+                    </div>
+
+                    <!-- HR -->
+                    <div class="mt-16">
+                        <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users w-8 h-8 mr-4 text-pink"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                            <span class="text-pink">人事・採用担当者向け</span>：人事業務で使ってみよう
+                        </h3>
+                        
+                        <div class="use-case-card">
+                            <h4 class="use-case-title">採用候補者への面接日程調整メールの作成</h4>
+                            <p class="use-case-description">候補者の方に失礼がないように、丁寧なメールを送りたい。そんな時もCopilotが候補日を盛り込んだ最適な文面を考えてくれます。</p>
+                             <div class="copilot-interaction">
+                                <div class="prompt-box">
+                                    <div class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user w-4 h-4 mr-2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>あなたのお願い（プロンプト）</div>
+                                    <p class="prompt-text">「採用候補者の佐藤様へ、一次面接の日程調整のメールを作成してください。候補日は6月20日の10時、14時、16時。6月21日の11時、15時です。」</p>
+                                </div>
+                                <div class="response-box">
+                                    <div class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles w-4 h-4 mr-2 text-pink"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>Copilotの回答</div>
+                                    <div class="prose prose-invert max-w-none text-gray-300">
+                                        <p>件名：【株式会社〇〇】一次面接の日程調整のご連絡</p>
+                                        <p>佐藤 様</p>
+                                        <p>この度は、弊社の求人にご応募いただき、誠にありがとうございます。<br>株式会社〇〇の採用担当、〇〇と申します。</p>
+                                        <p>書類選考の結果、ぜひ一度佐藤様とお話させていただきたく、一次面接のご案内でご連絡いたしました。</p>
+                                        <p>つきましては、下記の日程でご都合のよろしい時間帯を2〜3つほどお教えいただけますでしょうか。</p>
+                                        <p>【面接候補日時】</p>
+                                        <ul>
+                                            <li>6月20日（金） 10:00〜 / 14:00〜 / 16:00〜</li>
+                                            <li>6月21日（土） 11:00〜 / 15:00〜</li>
+                                        </ul>
+                                        <p>もし上記日程でのご調整が難しい場合は、お気兼ねなくご希望の日時をお知らせください。<br>面接はオンラインにて、30分程度を予定しております。</p>
+                                        <p>佐藤様からのご返信を、心よりお待ちしております。</p>
+                                        <p>---<br>株式会社〇〇<br>人事部 採用担当 〇〇 〇〇<br>（連絡先）<br>---</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="use-case-card">
+                            <h4 class="use-case-title">社内規定に関するQ&amp;A対応</h4>
+                            <p class="use-case-description">社員からの「これってどうなってるの？」という質問。Copilotに社内規定を読み込ませておけば、いつでも正確に答えてくれます。</p>
+                            <div class="copilot-interaction">
+                                <div class="prompt-box">
+                                    <div class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user w-4 h-4 mr-2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>あなたのお願い（プロンプト）</div>
+                                    <p class="prompt-text">「有給休暇の申請ルールについて、よくある質問と答えを3つ作成してください。」</p>
+                                </div>
+                                <div class="response-box">
+                                    <div class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles w-4 h-4 mr-2 text-pink"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>Copilotの回答</div>
+                                    <p class="mb-4">承知いたしました。有給休暇の申請ルールに関するQ&amp;Aを作成します。</p>
+                                    <div class="space-y-4 text-gray-300">
+                                        <div>
+                                            <p class="font-bold text-white">Q1. 有給休暇はいつまでに申請すればいいですか？</p>
+                                            <p>A1. 原則として、取得希望日の3営業日前までに、勤怠システムから申請してください。ただし、やむを得ない事情がある場合は、速やかに上長にご相談ください。</p>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-white">Q2. 半日単位で有給休暇は取れますか？</p>
+                                            <p>A2. はい、取得可能です。午前休（9:00〜13:00）と午後休（14:00〜18:00）の区分で申請できます。</p>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-white">Q3. 申請が却下されることはありますか？</p>
+                                            <p>A3. 時季変更権に基づき、事業の正常な運営を妨げる場合には、取得日の変更をお願いすることがあります。ただし、正当な理由なく取得を拒否することはありません。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Section: Image Generation Hands-on -->
+                <section id="hands-on" class="scroll-mt-20 mb-24 content-section visible">
+                    <h2 class="section-title">画像生成ハンズオン：<span class="text-pink">言葉で絵を描いてみよう！</span></h2>
+                    <p class="section-subtitle">ここからは、Copilotの一番楽しい機能の一つ、画像生成を実際に体験してみましょう！お題は「未来のオフィスで働く、かわいい動物のキャラクター」です。</p>
+
+                    <!-- 時間の目安を追加 -->
+                    <div class="mt-8 bg-pink/10 border border-pink/30 p-4 rounded-lg text-center">
+                        <p class="text-pink font-bold">⏰ このハンズオンは約10分を予定しています</p>
+                        <p class="text-gray-300 text-sm mt-1">プロンプトを考える時間は多めに取りましょう。進捗に合わせて調整します。</p>
+                    </div>
+
+                    <!-- 画像生成ツールのアクセス方法を追加 -->
+                    <div class="mt-8 bg-navy-light p-6 rounded-lg border border-gray-700">
+                        <h3 class="text-xl font-bold text-white mb-3 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link text-pink mr-2"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            画像生成ツールへのアクセス方法
+                        </h3>
+                        <p class="text-gray-300 mb-4">画像生成には、Microsoft Designerを使用します：</p>
+                        <ol class="list-decimal list-inside text-gray-300 space-y-2">
+                            <li>ブラウザで  <a href="https://m365.cloud.microsoft/chat/?fromcode=edgentp&redirectid=799754f952094052b0caaeab692c522f&auth=2&internalredirect=CCM&from=NoAccountOnStart" class="text-pink" target="_blank">    M365 Copilot.com  </a>  にアクセス</li>
+                            <li>Microsoftアカウントでサインイン</li>
+                            <li>「copilot」のチャット画面が開かれる</li>
+                            <li>テキスト入力欄にプロンプト（お願いの言葉）を入力</li>
+                        </ol>
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <p class="text-lg text-gray-300 mb-8">Copilotにお願いすると、こんなに素敵な画像が作れます！</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+<img src="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/1749801933156-cat_typing_on_holographic_keyboard_in_future_office_index_0@1024x1024.png" alt="未来のオフィスでホログラフィックキーボードを打つ猫" class="rounded-xl shadow-lg hover:shadow-pink/30 hover:scale-105 transition-all duration-300">
+                            <img src="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/1749801858596-cute_rabbit_character_video_conferencing_on_floating_screen_in_future_office_index_1@1024x1024.png" alt="未来のオフィスで浮遊スクリーンでビデオ会議するうさぎ" class="rounded-xl shadow-lg hover:shadow-pink/30 hover:scale-105 transition-all duration-300">
+                            <img src="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/1749801903320-friendly_dog_organizing_digital_files_with_robot_assistant_index_2@1024x1024.png" alt="未来のオフィスでロボットアシスタントとデジタルファイルを整理する犬" class="rounded-xl shadow-lg hover:shadow-pink/30 hover:scale-105 transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <div class="mt-16">
+                        <h3 class="text-3xl font-bold text-white mb-6 text-center">画像生成の<span class="text-pink">かんたん4ステップ</span></h3>
+                        <div class="relative mt-8">
+                             <!-- Dashed line connecting steps -->
+                            <div class="absolute left-1/2 top-4 bottom-4 w-0.5 bg-gray-700 hidden md:block"></div>
+                            
+                            <div class="space-y-12">
+                                <div class="step-item">
+                                    <div class="step-icon">1</div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">お願いの言葉を考える</h4>
+                                        <p>どんな絵が見たいか、言葉で具体的に考えます。これが「プロンプト」です。上手にお願いするコツは「具体的」に伝えること！</p>
+                                        <div class="p-4 mt-4 bg-navy-dark rounded-lg border border-gray-700">
+                                            <p class="font-bold text-white">コツ：誰が、どこで、何してる？</p>
+                                            <ul class="list-disc list-inside text-sm text-gray-400 mt-2">
+                                                <li><strong class="text-pink">誰が/何が：</strong>かわいい猫のキャラクター</li>
+                                                <li><strong class="text-pink">どこで：</strong>未来のオフィスで</li>
+                                                <li><strong class="text-pink">何をしている：</strong>パソコンで仕事をしている</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-item">
+                                    <div class="step-icon">2</div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">Microsoft Designerに入力する</h4>
+                                        <p>考えた「お願いの言葉（プロンプト）」をMicrosoft Designerのテキスト入力欄に入力します。下の例をコピーして試してみましょう！</p>
+                                        <div class="prompt-code-block">
+                                            <pre id="prompt-1" class="flex-1">未来のオフィスで、パソコンに向かって仕事をしているかわいい猫のキャラクター、絵本のような優しいイラスト</pre>
+                                            <button class="copy-btn" data-clipboard-target="#prompt-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" class="lucide lucide-copy w-4 h-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                                                <span class="copy-text">コピー</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-icon">3</div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">「作成」ボタンを押す</h4>
+                                        <p>入力したら「Create」や「生成」といったボタンを押します。AIがあなたの言葉を解読して、絵を描き始めるのを数秒待ちましょう。ドキドキの瞬間です！</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-icon">4</div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">完成！気に入った絵を選ぶ</h4>
+                                        <p>あなたの言葉から生まれた、世界に一枚だけの絵が完成です！通常、いくつかのパターンが提案されるので、一番イメージに近いものを選びましょう。気に入ったら保存もできます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-16">
+                         <h3 class="text-3xl font-bold text-white mb-6 text-center">もっとやってみよう！<span class="text-pink">練習タイム</span></h3>
+                         <p class="text-center text-gray-300">言葉を少し変えるだけで、全く違う絵が生まれます。色々試すのが上達のコツです！</p>
+                         <div class="grid md:grid-cols-2 gap-6 mt-8">
+                            <div class="practice-card">
+                                <h4 class="practice-title">動物を変えてみる</h4>
+                                <div class="prompt-code-block">
+                                    <pre id="prompt-2">空中に浮いているデスクで、楽しそうに電話をしている賢い犬、アニメ風</pre>
+                                    <button class="copy-btn" data-clipboard-target="#prompt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" class="lucide lucide-copy w-4 h-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg><span class="copy-text">コピー</span></button>
+                                </div>
+                            </div>
+                            <div class="practice-card">
+                                <h4 class="practice-title">実務に近い画像を作ろう</h4>
+                                <div class="prompt-code-block">
+                                    <pre id="prompt-3">超近未来のオフィスで、おじいちゃんがビールを飲みながら、パソコンで仕事をしているイラスト</pre>
+                                    <button class="copy-btn" data-clipboard-target="#prompt-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" class="lucide lucide-copy w-4 h-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg><span class="copy-text">コピー</span></button>
+                                </div>
+                            </div>
+                            <div class="practice-card">
+                                <h4 class="practice-title">絵のタッチを変える</h4>
+                                <div class="prompt-code-block">
+                                    <pre id="prompt-4">ロボットと一緒に書類を整理しているペンギン、リアルな写真のようなスタイル、クローズアップ</pre>
+                                    <button class="copy-btn" data-clipboard-target="#prompt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" class="lucide lucide-copy w-4 h-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg><span class="copy-text">コピー</span></button>
+                                </div>
+                            </div>
+                            <div class="practice-card">
+                                <h4 class="practice-title">注意喚起のポスターを作ろう</h4>
+                                <div class="prompt-code-block">
+                                    <pre id="prompt-5">ごみ捨てと、ごみの分別を推進するポスターを作りたいです。汚い格好のサラリーマンとOLが、ごみが散乱しているぼろぼろのオフィスで、喧嘩しながら仕事をしているイラストを作成してこうならないようにと注意喚起のポスターを作ってください。</pre>
+                                    <button class="copy-btn" data-clipboard-target="#prompt-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" class="lucide lucide-copy w-4 h-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg><span class="copy-text">コピー</span></button>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </section>
+
+                <!-- Section: Summary and Q&A -->
+                <section id="summary" class="scroll-mt-20 content-section visible">
+                    <h2 class="section-title">まとめと<span class="text-pink">次のステップ</span></h2>
+                    <p class="section-subtitle">今日の研修お疲れ様でした！Copilotが皆さんの強力な味方になることを感じていただけたでしょうか。</p>
+
+                    <div class="mt-12 grid md:grid-cols-2 gap-8">
+                        <div class="bg-navy-light p-8 rounded-xl border border-gray-700">
+                             <h3 class="text-2xl font-bold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="award" class="lucide lucide-award text-pink mr-3"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>今日の振り返り</h3>
+                            <ul class="space-y-3 list-disc list-inside text-gray-300">
+                                <li>Copilotが文章作成、要約、情報収集、画像生成など、色々なことができると知りました。</li>
+                                <li>購買や人事のいつもの仕事で、具体的にどう使えるかイメージが湧きました。</li>
+                                <li>言葉だけで絵を描く、AIならではの楽しさと創造性を体験しました。</li>
+                            </ul>
+                        </div>
+                         <div class="bg-navy-light p-8 rounded-xl border border-gray-700">
+                             <h3 class="text-2xl font-bold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="lightbulb" class="lucide lucide-lightbulb text-pink mr-3"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>明日から使ってみよう！</h3>
+                            <ul class="space-y-3 list-disc list-inside text-gray-300">
+                                <li>まずは簡単なメール作成など、小さなことからCopilotに頼んでみましょう。</li>
+                                <li>「これ、Copilotに手伝ってもらえないかな？」と考える癖をつけてみましょう。</li>
+                                <li>困った時、迷った時の「相談相手」として、気軽に話しかけてみてください。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 text-center bg-navy-dark p-10 rounded-2xl">
+                        <h3 class="text-3xl font-bold text-white mb-4">質疑応答</h3>
+                        <p class="text-gray-300 text-lg">今日の研修で分からなかったこと、もっと知りたいことはありませんか？<br>どんな些細なことでも大丈夫ですので、お気軽に質問してください。</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-square-quote" class="lucide lucide-message-square-quote w-16 h-16 text-pink mx-auto mt-6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 12a2 2 0 0 0 2-2V8H8"></path><path d="M14 12a2 2 0 0 0 2-2V8h-2"></path></svg>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        lucide.createIcons();
+      });
+    </script>
+    <script type="module" src="./【Flowith版】Microsoft Copilot 研修資料 _ はじめてのAI活用ガイド_files/script.js.ダウンロード"></script>
+
+<script async="" id="flowith-inject-image-placeholder">
+document.addEventListener('error', (e) => {
+  if (e.target.tagName === 'IMG') {
+    e.target.onerror = null;
+    e.target.src = 'https://r2.flowith.net/sandbox-placeholder.png';
+    e.target.style.objectFit = 'cover';
+    e.target.style.objectPosition = 'center';
+  }
+}, true);
+</script>
+
+<a id="flowith-inject-button" href="https://try.flowith.io/" target="_blank" class="fixed bottom-1.5 right-1.5 z-[9999] flex items-center rounded-full border-0 bg-gradient-to-r from-indigo-900/40 to-slate-900/30 px-2 py-1 text-xs font-normal text-white shadow-md ring-1 ring-white/15 backdrop-blur-md transition-all duration-300 ease-in-out hover:from-indigo-900/50 hover:to-slate-900/40 hover:ring-white/20 hover:shadow-lg">
+  <svg width="96" height="14" viewBox="0 0 96 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18.8887 12V2.84033H20.209L23.3828 10.5591H23.4209L26.5947 2.84033H27.915V12H26.8486V4.92236H26.8105L23.8843 12H22.9194L19.9932 4.92236H19.9551V12H18.8887ZM30.7403 12.127C29.4263 12.127 28.544 11.3335 28.544 10.1338V10.1211C28.544 8.99756 29.4199 8.29297 30.937 8.2041L32.8286 8.09619V7.54395C32.8286 6.73779 32.3018 6.24902 31.3814 6.24902C30.5308 6.24902 29.9976 6.65527 29.8706 7.24561L29.8579 7.30273H28.7915L28.7979 7.23291C28.8931 6.14746 29.8389 5.27148 31.3941 5.27148C32.9556 5.27148 33.9331 6.11572 33.9331 7.43604V12H32.8286V10.9272H32.8032C32.416 11.6509 31.6226 12.127 30.7403 12.127ZM29.6738 10.1338C29.6738 10.7686 30.1944 11.1685 30.9878 11.1685C32.0288 11.1685 32.8286 10.4512 32.8286 9.49268V8.95312L31.064 9.06104C30.1817 9.11182 29.6738 9.50537 29.6738 10.1211V10.1338ZM37.2979 12.127C35.6094 12.127 34.4922 10.7812 34.4922 8.69922V8.69287C34.4922 6.61084 35.6221 5.27148 37.2788 5.27148C38.212 5.27148 38.98 5.74121 39.3926 6.50293H39.418V2.84033H40.5225V12H39.418V10.8828H39.3926C38.98 11.6509 38.2437 12.127 37.2979 12.127ZM37.5137 11.1494C38.6309 11.1494 39.4244 10.1782 39.4244 8.69922V8.69287C39.4244 7.22021 38.6245 6.24902 37.5137 6.24902C36.3457 6.24902 35.6221 7.18848 35.6221 8.69287V8.69922C35.6221 10.2163 36.3457 11.1494 37.5137 11.1494ZM44.211 12.127C42.313 12.127 41.1705 10.8003 41.1705 8.72461V8.71826C41.1705 6.67432 42.3384 5.27148 44.1412 5.27148C45.9439 5.27148 47.0421 6.61084 47.0421 8.59131V8.99756H42.2877C42.313 10.356 43.0621 11.1494 44.2364 11.1494C45.0743 11.1494 45.6646 10.7305 45.855 10.1655L45.8741 10.1084H46.9595L46.9468 10.1719C46.731 11.2637 45.6519 12.127 44.211 12.127ZM44.1348 6.24902C43.1763 6.24902 42.4273 6.90283 42.3067 8.13428H45.9185C45.8106 6.85205 45.0997 6.24902 44.1348 6.24902ZM50.4073 4.28125C50.0265 4.28125 49.7154 3.97021 49.7154 3.58936C49.7154 3.20215 50.0265 2.89746 50.4073 2.89746C50.7945 2.89746 51.0992 3.20215 51.0992 3.58936C51.0992 3.97021 50.7945 4.28125 50.4073 4.28125ZM49.8551 12V5.39844H50.9596V12H49.8551ZM51.944 12V5.39844H53.0485V6.33789H53.0738C53.4293 5.72217 54.1022 5.27148 55.1051 5.27148C56.5524 5.27148 57.3903 6.21094 57.3903 7.71533V12H56.2858V7.91211C56.2858 6.83936 55.7843 6.24902 54.7687 6.24902C53.7277 6.24902 53.0485 6.9917 53.0485 8.11523V12H51.944Z" fill="white" fill-opacity="0.8"></path>
+    <path d="M60.7809 12V6.3125H59.8605V5.39844H60.7809V4.58594C60.7809 3.31641 61.3713 2.71338 62.59 2.71338C62.8376 2.71338 63.0978 2.73242 63.2629 2.75781V3.65283C63.1296 3.63379 62.9582 3.62744 62.7868 3.62744C62.1774 3.62744 61.8727 3.93848 61.8727 4.59229V5.39844H63.2311V6.3125H61.8854V12H60.7809ZM63.9108 12V2.84033H65.0153V12H63.9108ZM68.7229 12.127C66.8884 12.127 65.6633 10.8003 65.6633 8.69922V8.68652C65.6633 6.58545 66.8947 5.27148 68.7165 5.27148C70.5383 5.27148 71.7761 6.5791 71.7761 8.68652V8.69922C71.7761 10.8066 70.5446 12.127 68.7229 12.127ZM68.7292 11.1494C69.8908 11.1494 70.6462 10.248 70.6462 8.69922V8.68652C70.6462 7.1377 69.8845 6.24902 68.7165 6.24902C67.5676 6.24902 66.7932 7.14404 66.7932 8.68652V8.69922C66.7932 10.2544 67.5612 11.1494 68.7292 11.1494ZM73.6809 12L71.8337 5.39844H72.9319L74.2522 10.7686H74.2776L75.7693 5.39844H76.8357L78.3337 10.7686H78.3591L79.6794 5.39844H80.7712L78.9304 12H77.8069L76.3152 6.89014H76.2898L74.8044 12H73.6809ZM81.781 4.28125C81.4001 4.28125 81.0891 3.97021 81.0891 3.58936C81.0891 3.20215 81.4001 2.89746 81.781 2.89746C82.1682 2.89746 82.4729 3.20215 82.4729 3.58936C82.4729 3.97021 82.1682 4.28125 81.781 4.28125ZM81.2288 12V5.39844H82.3332V12H81.2288ZM85.4631 12.127C84.2507 12.127 83.6541 11.5811 83.6541 10.3179V6.3125H82.6892V5.39844H83.6541V3.61475H84.7966V5.39844H86.0535V6.3125H84.7966V10.3115C84.7966 11.0161 85.1077 11.2129 85.698 11.2129C85.8313 11.2129 85.9583 11.1938 86.0535 11.1875V12.0825C85.9138 12.1016 85.679 12.127 85.4631 12.127ZM86.7776 12V2.84033H87.8821V6.45215H87.9075C88.263 5.70947 88.9803 5.27148 89.9641 5.27148C91.367 5.27148 92.3255 6.35693 92.3255 7.95654V12H91.221V8.14697C91.221 6.95361 90.6116 6.24902 89.5833 6.24902C88.5613 6.24902 87.8821 7.02344 87.8821 8.14697V12H86.7776ZM93.8875 12.0889C93.4812 12.0889 93.1639 11.7715 93.1639 11.3652C93.1639 10.959 93.4812 10.6416 93.8875 10.6416C94.2937 10.6416 94.6111 10.959 94.6111 11.3652C94.6111 11.7715 94.2937 12.0889 93.8875 12.0889Z" fill="white"></path>
+    <path d="M7.12426 3C6.77782 3 6.49697 3.26955 6.49697 3.60205V11.3857C6.49697 11.7182 6.77782 11.9878 7.12426 11.9878H8.91653C9.26297 11.9878 9.54382 11.7182 9.54382 11.3857V3.60205C9.54382 3.26955 9.26297 3 8.91653 3H7.12426Z" fill="white"></path>
+    <path d="M3.74415 3.043C3.57388 3.043 3.41953 3.10826 3.30694 3.21407C3.30617 3.2148 3.30489 3.21403 3.30524 3.21306C3.30562 3.21201 3.30416 3.21127 3.30346 3.21215L3.28484 3.23591C3.2565 3.26538 3.23122 3.29759 3.20948 3.33207C3.15003 3.40791 3.09789 3.48875 3.05367 3.57359L0.218409 9.01437L0.0577721 9.3602C0.0548834 9.36615 0.0520942 9.37215 0.0494065 9.37821L0.0319981 9.41568C0.0317521 9.41621 0.0323642 9.41673 0.0328835 9.41643C0.0333803 9.41615 0.033979 9.41661 0.0337906 9.41714C0.0118903 9.47806 1.09108e-07 9.54343 1.09108e-07 9.61147L0 11.4029C0 11.7327 0.279386 12 0.624026 12H2.4961C2.84074 12 3.12013 11.7327 3.12013 11.4029L3.12014 8.41716C3.12016 7.09803 4.23769 6.02867 5.61623 6.02867C5.96087 6.02867 6.24026 5.76132 6.24026 5.43154V3.64014C6.24026 3.31035 5.96087 3.043 5.61623 3.043H3.74415Z" fill="white"></path>
+    <path d="M9.87987 10.5072C9.87987 9.6827 10.5783 9.01433 11.4399 9.01433C12.3015 9.01433 13 9.6827 13 10.5072C13 11.3316 12.3015 12 11.4399 12C10.5783 12 9.87987 11.3316 9.87987 10.5072Z" fill="white"></path>
   </svg>
 </a>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-        </svg>
-      </button>
-    </section>
 
-    <!-- フッター -->
-    <footer class="mt-12 text-center text-gray-500 text-sm">
-      <p>© 2023 こすけさん専用マッチングアプリ返信支援アプリ</p>
-      <p class="mt-1">あなたの素敵な出会いを応援しています</p>
-    </footer>
-  </div>
-  <script src="https://flo.host/qHEfjRB/main.js"></script>
-</body>
-</html>
+
+
+</body></html>
